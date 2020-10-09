@@ -1,0 +1,151 @@
+/*Have the following
+1. html tag selector
+2. id selector
+3. class selector*/
+body{
+	font-family: 'Nunito Semibold';
+}
+/*Start of Global styling classes for text*/
+.text-center{
+	text-align: center;
+}
+.text-justify{
+	text-align: justify;
+}
+.text-underline{
+	text-decoration: underline;
+}
+/*end of global class styling for texts*/
+
+#grid-container{
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(6, minmax(30px, auto));
+	height: 100%;
+	box-sizing: border-box;
+}
+header, .header{
+	border-bottom: 2px solid turquoise;
+	max-height: 30px;
+}
+header{
+	grid-column: 1/13;	
+}
+header, .header h2{
+	margin: 0;
+	padding: 0;
+}
+nav{
+	grid-column: 1/3;
+	grid-row: 2/4;
+}
+q{
+	font-style: italic;
+	font-weight: bold;
+}
+nav a{
+	display: block;
+	text-decoration: none;
+	padding: 20px 2px;
+	color: blue;
+	transition: text-indent 1s;
+	cursor: pointer;
+}
+nav a:hover{
+	text-transform: uppercase;
+	color: red;
+	text-indent: 20px;
+}
+main{
+	grid-column: 3/13;
+	grid-row:2/4;
+}
+main img{
+	border-radius: 50%;
+	padding: 10px;
+}
+section h3{
+	font-family: Georgia;
+}
+.section-1, .section-2, .section-3, .section-4{
+	grid-row: 4/6;
+	min-height: 25vh;
+}
+.section-1{
+	grid-column: 1/4;
+	padding: 2px;	
+}
+.section-2{
+	grid-column: 4/7;
+}
+
+.section-2 p{
+	padding: 5px;
+	font-family: cursive;
+}
+.section-3{
+	grid-column: 7/10;
+}
+.section-3 p{
+	padding: 0 5px;
+	margin: 2px;
+}
+.section-4{
+	grid-column: 10/13;
+	padding: 0 5px;
+	margin-left: 2px;
+}
+.section-4 q{
+	text-align: center;
+	padding: 2px;
+}
+footer{
+	border-top: 2px solid turquoise;
+	grid-column: 1/13;
+	grid-row: 6/7;
+	font-style: italic;
+	box-sizing: border-box;
+	padding: 4px;
+	font-weight: bolder;
+	/*keep footer at page bottom*/
+	position: absolute;
+	bottom: 0;
+	width: 99.4%;
+	max-height: 20px;
+}
+fieldset{
+	border-radius: 8px;
+	border-color: turquoise;
+}
+fieldset a{
+	text-decoration: none;
+	padding: 2px;
+	color: blue;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background 2s;
+}
+fieldset a:hover{
+	background-color: teal;
+	color: white;
+	padding: 2px 10px;
+}
+legend{
+	font-weight: bold;
+}
+#personality{
+	background-color: #c0c0c0;
+	box-sizing: border-box;
+	max-height: 100vh;
+}
+/*Styling of Personality Page*/
+#page-container{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(6, minmax(20px, auto));
+	grid-template-areas: 
+	"header header header header header header";
+}
+.header{
+	grid-area: header;
+}
