@@ -68,35 +68,35 @@ main img{
 section h3{
 	font-family: Georgia;
 }
-.section-1, .section-2, .section-3, .section-4{
+.contacts, .believe, .gratitude, .no-regrets{
 	grid-row: 4/6;
 	min-height: 25vh;
 }
-.section-1{
+.contacts{
 	grid-column: 1/4;
 	padding: 2px;	
 }
-.section-2{
+.believe{
 	grid-column: 4/7;
 }
 
-.section-2 p{
+.believe p{
 	padding: 5px;
 	font-family: cursive;
 }
-.section-3{
+.gratitude{
 	grid-column: 7/10;
 }
-.section-3 p{
+.gratitude p{
 	padding: 0 5px;
 	margin: 2px;
 }
-.section-4{
+.no-regrets{
 	grid-column: 10/13;
 	padding: 0 5px;
 	margin-left: 2px;
 }
-.section-4 q{
+.no-regrets q{
 	text-align: center;
 	padding: 2px;
 }
@@ -129,8 +129,9 @@ fieldset a{
 fieldset a:hover{
 	background-color: teal;
 	color: white;
-	padding: 2px 10px;
+	padding: 1px 10px;
 }
-legend{
-	font-weight: bold;
+fieldset p{
+	padding: 5px;
+	margin: 0;
 }

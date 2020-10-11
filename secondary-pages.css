@@ -130,7 +130,7 @@ footer{
 	background-color: #0bf9ea;
 	color: black;
 }
-.profile-summary{
+.resume{
 	box-sizing: border-box;
 	width: 90%;
 	padding: 10px;
@@ -164,4 +164,44 @@ td, th{
 	list-style-type: none;
 	list-style-position: outside;
 	padding-left: 0;
+}
+.work-exp{
+	margin: 15px 5px;
+	padding: 10px 5px;
+}
+.work-exp p{
+	padding: 3px;
+	line-height: 2px;
+}
+.work-exp h4{
+	border-bottom: 0.5px solid #c0c0c0;
+}
+.aspiration-1{
+	background-image: url("images/bucketlist.png");
+	background-size: cover;
+	max-width: 38vw;
+	border-radius: 8px;
+}
+.aspiration-1 h3{
+	color: white;
+	font-style: italic;
+	text-shadow: 1px 1px turquoise;
+}
+.aspiration-1 p{
+	padding: 1% 2% 1% 30%;
+}
+.aspiration-1 ul{
+	padding: 2% 2% 2% 34%;
+	list-style-type: square;
+}
+.aspiration-2{
+	position: absolute;
+	width: 38vw;
+	margin-left: 42%;
+	margin-top: -18%;
+	border-radius: 8px;
+	border: 0.5px solid silver;
+}
+.aspiration-2 img{
+	padding: 2px 25%;
 }
